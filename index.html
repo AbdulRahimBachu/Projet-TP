@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- le titre de la page  -->
+    <title>Cours_html</title>
+    <!-- icone en anglais -->
+    <link rel="shortcut icon" href="logo_html.ico">
+</head>
+<body>  
+  <header>
+    <h1><span>&#9758;</span>Texte - Titre H1</h1>
+    <p>Texte basique. <em>Voici un texte en italique </em> <strong>
+      Texte en gras
+    </strong></p>
+  </header>
+  <section>
+      <div>
+        <h2>Photos - Titre H2 </h2>
+        <img src="Photos_Voiture.jpg" height="200"
+        alt= "Image Voiture" >
+      </div>
+      <div>
+        <h3>Listes - Titre H3</h3>
+        <ul>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+          <li>UL = unordered list</li>
+        </ul>
+        <ol>
+          <li>ol=ordered list</li>
+          <li>ol=ordered list</li>
+          <li>ol=ordered list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux - Titre H4</h4>
+        <table border="1" width="50%">
+          <!-- Legende -->
+          <caption>Population RDC</caption>
+          <!-- En-tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Corps du tableu -->
+            <tr>
+              <td>Goma</td>
+              <td>2M</td>
+            </tr>
+            <tr>
+              <td>Kinshasa</td>
+              <td>5M</td>
+            </tr>
+            <tr>
+              <td>Lubumbashi</td>
+              <td>4M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Liens - Titre H5</h5>
+        <a href="https://htmlcheatsheet.com/" 
+         target="_blank"> HTML cheat sheet </a>
+        <br>
+        <a href="https://toptal.com/designers/htmlarrows/symbols/" 
+         target="_blank">les icons en HTML</a>
+      </div>
+      <div>
+        <h6> Video Titre-H6 </h6>
+        <video src="Video.MP4"
+        autoplay loop muted height="150" width="200"></video>
+      </div>
+  </section>
+  <br>
+  <!-- Formulaire -->
+  <section>
+    <h2>Formulaire</h2>
+    <form action="C:\Users\ABDUL_RAHIM\Desktop\MES TP\Projet TUTOS\bonjour.txt" method="post">
+       <label for="name">Nom </label> <input id="name" 
+       type="text" placeholder="Entrez Votre Nom">
+       <br> <br>
+       <label for="age">Age</label>
+       <input id="age" type="number" 
+       placeholder="Entrez votre age"
+       min="0" max="90"
+       step="1" ><br><br>
+       <label for="gender">Genre</label>
+       <select id="gender">
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+       </select><br><br>
+       <div>
+        <input type="radio" name="type"id="human">
+        <label for="human">Humain</label>
+        
+        <input type="radio" name="type" checked
+         id="dog">
+        <label for="dog">Chien</label>
+        
+        <input type="radio" name="type"id="cat">
+        <label for="cat">Chat</label>
+       </div>
+       <textarea placeholder="Entrez votre demande"
+        cols="30" rows="10"></textarea><br><br>
+        <label><input type="checkbox">Cocher pour accepter 
+        les conditions
+        </label><br><br>
+        <input type="submit" value="valider">
+    </form>
+  </section>
+  <br>
+  <!-- Mail et envoie de fichier   -->
+  <footer>
+    <a href="mailto:abdulbachu6@gmail.com">Ecrivez moi</a><br>
+    <a href="notice.txt" download="nom_du_fichier">
+        Telecharger la Notice </a>
+  </footer>
+</body>
+</html> 
